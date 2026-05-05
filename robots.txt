@@ -1,6 +1,14 @@
 User-agent: *
 Allow: /
 
+# Explicitly allow Facebook crawlers (this is the most important one right now)
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Facebot
+Allow: /
+
+# Other major crawlers
 User-agent: Googlebot
 Allow: /
 
@@ -8,9 +16,6 @@ User-agent: Bingbot
 Allow: /
 
 User-agent: Twitterbot
-Allow: /
-
-User-agent: facebookexternalhit
 Allow: /
 
 User-agent: LinkedInBot
